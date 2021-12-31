@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #FAF9F6;
+}
+
 h2 {
     margin: 15px 0 25px;
     padding: 0 15px;
@@ -16,8 +21,16 @@ h2::after {
     content: '|'
 }
 
+section {
+    width: 80%;
+}
+
 .small-txt {
     font-size: 80%;
+}
+
+.about-text {
+    font-size: 125%;
 }
 
 .dylan-img,
