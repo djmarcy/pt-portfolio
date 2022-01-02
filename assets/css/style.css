@@ -1,80 +1,117 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FAF9F6;
+  background-color: #faf9f6;
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: #dee2e2;
+}
+
+hr {
+  width: 66%;
+  margin: 25px auto;
+  background-color: #dee2e2;
+  height: 2px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  margin-left: 25px;
+}
+
+nav ul {
+  margin-left: 0;
 }
 
 h2 {
-    margin: 15px 0 25px;
-    padding: 0 15px;
+  margin: 15px 0 25px;
+  padding: 0 15px;
 }
 
 h2::after {
-    margin-left: 10px;
-    font-weight: bold;
-    content: '|'
+  margin-left: 10px;
+  font-weight: bold;
+  content: "|";
 }
 
 section {
-    width: 80%;
+  width: 80%;
+}
+
+ul {
+  margin-left: 50px;
 }
 
 .small-txt {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 .about-text {
-    font-size: 125%;
+  font-size: 125%;
 }
 
 .dylan-img,
 .salem-img {
-    width: 75%;
-    display: block;
-    margin: 0 auto;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
 }
 
 .highlighted-project-container {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .opacity {
-    transition: opacity .5s;
-    opacity: 50%;
+  transition: opacity 0.5s;
+  opacity: 50%;
 }
 
 .opacity:hover,
 .opacity:hover > .highlighted-project {
-    cursor: pointer;
-    transition: opacity .5s;
-    opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  opacity: 1;
 }
 
 .highlighted-project {
-    display: block;
-    height: 350px;
-    width: 350px;
-    border: 2px solid black;
-    margin: 0 auto;
-    background-color: grey;
+  display: block;
+  height: 350px;
+  width: 350px;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: grey;
 }
 
 .highlight-label {
-    width: 50%;
-    height: 15%;
-    background-color: black;
-    color: grey;
-    transition: opacity .5s;
-    opacity: 50%;
+  width: 50%;
+  height: 15%;
+  background-color: black;
+  color: grey;
+  transition: opacity 0.5s;
+  opacity: 50%;
 }
 
 footer {
-    padding: 25px;
-    text-align: center;
+  padding: 25px;
+  text-align: center;
 }
