@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding: 25px;
+  padding: 25px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,7 @@ hr {
   width: 66%;
   margin: 25px auto;
   background-color: #dee2e2;
-  height: 2px;
+  height: 4px;
 }
 
 nav ul li {
@@ -37,6 +37,16 @@ nav ul li {
   display: inline;
   text-align: center;
   margin-left: 25px;
+  font-size: 133%;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: inherit;
 }
 
 nav ul {
@@ -95,20 +105,36 @@ ul {
 
 .highlighted-project {
   display: block;
-  height: 350px;
-  width: 350px;
+  width: 400px;
+  max-width: 75%;
+  aspect-ratio: 1/1;
   border: 2px solid black;
   margin: 0 auto;
   background-color: grey;
 }
 
 .highlight-label {
+  margin: 0 auto;
   width: 50%;
   height: 15%;
   background-color: black;
   color: grey;
   transition: opacity 0.5s;
   opacity: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.highlighted-project:hover > .highlight-label {
+  margin-top: 25%;
+  font-size: 166%;
+  width: 50%;
+  height: 50%;
+  transition: 0.5s;
 }
 
 footer {
