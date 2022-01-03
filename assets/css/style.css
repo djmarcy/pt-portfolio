@@ -1,3 +1,4 @@
+/* #Universal */
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -72,6 +73,8 @@ ul {
   margin-left: 50px;
 }
 
+/* #Body */
+/* ##About */
 .small-txt {
   font-size: 80%;
 }
@@ -87,20 +90,9 @@ ul {
   margin: 0 auto;
 }
 
+/* ##Highlighted Project */
 .highlighted-project-container {
   margin: 15px 0;
-}
-
-.opacity {
-  transition: opacity 0.5s;
-  opacity: 50%;
-}
-
-.opacity:hover,
-.opacity:hover > .highlighted-project {
-  cursor: pointer;
-  transition: opacity 0.5s;
-  opacity: 1;
 }
 
 .highlighted-project {
@@ -108,9 +100,12 @@ ul {
   width: 400px;
   max-width: 75%;
   aspect-ratio: 1/1;
-  border: 2px solid black;
+  border: 2px solid #dee2e2;
   margin: 0 auto;
-  background-color: grey;
+  background-image: url("../images/about_dylan\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .highlight-label {
@@ -134,9 +129,68 @@ ul {
   font-size: 166%;
   width: 50%;
   height: 50%;
+  opacity: 0.75;
   transition: 0.5s;
+  color: #dee2e2;
 }
 
+/* ##Projects Opacity Controller */
+.opacity {
+  transition: opacity 0.5s;
+  opacity: 50%;
+}
+
+.opacity:hover,
+.opacity:hover > .highlighted-project,
+.opacity:hover > .other-projects {
+  cursor: pointer;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+/* ##Other Projects (Carousel Placeholder) */
+.project-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.other-projects-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.other-projects {
+  width: 200px;
+  aspect-ratio: 1/1;
+  opacity: 50%;
+  transition: 0.5s;
+  border: 2px solid #dee2e2;
+}
+
+.other-projects-label {
+}
+
+/* ##Contact Dylan */
+.contact-container {
+  margin: 0 auto;
+  width: 33%;
+  border: solid 3px #dee2e2;
+  margin-bottom: 50px;
+  padding: 25px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 150%;
+}
+
+.contact-title:not(:first-child) {
+  margin-top: 25px;
+}
+
+/* #Footer */
 footer {
   padding: 25px;
   text-align: center;
