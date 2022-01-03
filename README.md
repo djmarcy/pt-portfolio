@@ -8,6 +8,7 @@ Portfolio landing page which included the following:
 - Portfolio with highlighted project and collection of others
 - "Pupdates" section mostly because I wanted to show off how cute Salem was as a puppy
 - Contact information
+- Mobile-responsive design
 
 Future iterations of this project will include:
 
